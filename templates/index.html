@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reverse Dictionary</title>
+        <link rel="stylesheet" href="static/css/bulma/bulma.min.css">
+        <!--<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>-->
+    </head>
+    <body>
+        <section class="section">
+            <div class="container is-fluid">
+                <h1 class="title">          
+                    Reverse Dictionary
+                </h1>      
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Definition of the word</label>
+                    </div>
+                    <div class="field-body">                
+                        <div class="field is-grouped">
+                            <p class="control is-expanded">
+                                <input id="definition" class="input" type="text" placeholder="e.g. group of relatives">
+                            </p>
+                            <p class="control">
+                                <a id="find" class="button is-info">Find Word</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="words">
+                    
+                </div>
+            </div>
+        </section>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/main.js"></script>
+    </body>
+</html>
