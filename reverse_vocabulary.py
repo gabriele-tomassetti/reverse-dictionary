@@ -44,7 +44,6 @@ def find_words(definition, negative_definition):
     words = []    
 
     for word in similar_words:
-        #word = word.replace('_', ' ')
         if (word in dict_words):
             words.append(word)
 
@@ -104,7 +103,6 @@ if __name__ == "__main__":
     
     # keep everything ready    
     model.syn0norm = model.syn0  # prevent recalc of normed vectors    
-    #model.most_similar('stuff')
 
     app.logger.warning("Word2Vec Model loaded")            
     end = timer()
